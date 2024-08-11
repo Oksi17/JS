@@ -153,18 +153,19 @@ else{
 //
 let time =55;
 
-if( time >= 0 && time <= 14){
+if (time <0 ||  time > 59){
+console.log('Wrong number');
+}
+else if( time >= 0 && time <= 14){
     console.log('First quarter');
 }
-
-else if (time>=15 && time <=29){
+else if (time <=29){
     console.log('Second quarter');
 }
-
-else if (time >=30 && time<=44){
+else if (time<=44){
     console.log('Third quarter');
 }
-else if (time>=45 && time<=59){
+else if(time<=59){
     console.log('Forth quarter');
 }
 
