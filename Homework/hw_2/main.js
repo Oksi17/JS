@@ -149,10 +149,10 @@ else{
 }
 
 //- Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої четверті години попадає число
-// (в першу, другу, третю или четверту частину години).
-//
-let time =55;
+// // (в першу, другу, третю или четверту частину години).
+// //
 
+let time =55
 if (time <0 ||  time > 59){
 console.log('Wrong number');
 }
@@ -221,21 +221,19 @@ let q = 2;
 let y = 4;
 
 if (q > y) {
-    console.log('q is bigger than y');
+    console.log(q);
 } else if( q < y) {
-    console.log('y is bigger than q');
+    console.log(y);
 } else  {
     console.log('q is the same as y');
 }
 
 //- є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно). Напишіть код який,
 //  буде присвоювати змінній х значення "default"  якщо ви намагаєтесь присвоїти в неї falsy-значення (хибноподібні, тобто ті, які приводиться до false, а це 0 null undefined і тд).
+  let n=123;
+if (n===0 ||n===null|| n===undefined||n===false|| n===NaN){n='default'}
+    console.log(n);
 
-let n=123;
-n= n || 'default' ;
-if(true){
-    console.log(x);
-}
 
 //- з файлу arrays.js (лежить в папці 2023 plan ) взяти масив coursesAndDurationArray. За допомоги іф перевірити кожен його елемент на тривалість навчання. У випадку якщо тривалість довша за 5 місяців вивести в консоль "Супер".
 
